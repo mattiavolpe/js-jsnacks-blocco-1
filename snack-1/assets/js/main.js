@@ -11,7 +11,7 @@ const secondNumber = Number(prompt("Insert the second number"));
 if (firstNumber === secondNumber) {
   console.log("The inserted numbers are the same");
 } else if (firstNumber > secondNumber) {
-  console.log("The first number is bigger than the second");
+  console.log(`The first number ${firstNumber} is bigger than the second ${secondNumber}`);
 } else {
-  console.log("The second number is bigger than the first");
+  console.log(`The second number ${secondNumber} is bigger than the first ${firstNumber}`);
 }
