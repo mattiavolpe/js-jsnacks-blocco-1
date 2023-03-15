@@ -31,3 +31,40 @@ for (let i = 0; i < insertedNumbers.length; i++) {
 }
 
 console.log(`The sum of the inserted numbers is ${sum}`);
+
+
+
+
+
+/* WHILE VERSION */
+
+let sumWhile = 0;
+const insertedNumbersWhile = [];
+
+let j = 1;
+
+while (j <= 10) {
+  const number = Number(prompt(`${j}) Insert a number`));
+  if (isNaN(number)) {
+    j--;
+  } else {
+    sum += number;
+    insertedNumbers.push(number);
+  }
+
+  j++;
+
+  // ALTERNATIVE SOLUTION WITH NO NUMBERS OUTPUT
+  // isNaN(number) ? j-- : sum += number;
+}
+
+console.log("List of inserted numbers followed by their sum");
+
+let k = 0;
+
+while (k < insertedNumbers.length) {
+  console.log(insertedNumbers[k]);
+  k++;
+}
+
+console.log(`The sum of the inserted numbers is ${sumWhile}`);
