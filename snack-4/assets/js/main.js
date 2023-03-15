@@ -18,4 +18,23 @@ for (let i = 0; i < authorizedPeople.length; i++) {
 
 alert(`Ciao ${userName}. ${authorized ? "Sei nella lista degli invitati" : "Non sei nella lista degli invitati"}`);
 
+
+
+
 /* WHILE VERSION */
+
+authorized = false;
+
+userName = "";
+
+do {
+  userName = prompt("Inserisci il tuo nome: ");
+} while (userName == "");
+
+let i = 0;
+while (i < authorizedPeople.length) {
+  authorizedPeople[i] === userName ? authorized = true : false;
+  i++;
+}
+
+alert(`Ciao ${userName}. ${authorized ? "Sei nella lista degli invitati" : "Non sei nella lista degli invitati"}`);
