@@ -49,7 +49,7 @@ while (j <= 10) {
     j--;
   } else {
     sumWhile += number;
-    insertedNumbers.push(number);
+    insertedNumbersWhile.push(number);
   }
 
   j++;
@@ -63,7 +63,7 @@ console.log("List of inserted numbers followed by their sum");
 let k = 0;
 
 while (k < insertedNumbers.length) {
-  console.log(insertedNumbers[k]);
+  console.log(insertedNumbersWhile[k]);
   k++;
 }
 
