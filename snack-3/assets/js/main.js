@@ -48,7 +48,7 @@ while (j <= 10) {
   if (isNaN(number)) {
     j--;
   } else {
-    sum += number;
+    sumWhile += number;
     insertedNumbers.push(number);
   }
 
